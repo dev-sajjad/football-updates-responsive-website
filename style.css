@@ -1,0 +1,391 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap');
+
+/* Common styles */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+}
+.container {
+    max-width: 1240px;
+    margin: 0 auto;
+}
+hr{
+	width: 100%;
+	border: none;
+	height: 1px;
+	background-color: rgb(75, 75, 75);
+}
+
+
+/* Top banner  */
+.top-banner {
+    display: flex;
+    align-items: center;
+    height: 600px;
+    color: #fff;
+    background-color: #161616;
+    border-radius: 10px;
+    margin: 50px 0;
+    padding: 0 50px; 
+    overflow: hidden;
+}
+.banner-text {
+    width: 50%;
+    padding: 0 25px;
+}
+.banner-text p {
+    font-size: 1.2em;
+}
+.banner-heading {
+    font-size: 3.5em;
+    text-transform: capitalize;   
+    margin-bottom: 0;
+    line-height: 70px;
+    letter-spacing: 1px;
+}
+.watch-live-btn {
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+    padding: 14px 25px; 
+    border-radius: 5px;
+    margin-top: 10px;
+    background-color: #DD0000;
+    border: 2px solid transparent;
+}
+.watch-live-btn:hover {
+    color: #DD0000;
+    background-color: #fff;
+    border: 2px solid #DD0000;
+}
+.watch-live-btn i {
+    margin-left: 6px;
+}
+.banner-img {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.banner-img img {
+    width: 100%;
+    margin-left: 10px;
+}
+
+/* Main Area  */
+
+.main-area {
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    justify-content: center;
+    overflow: hidden;
+    margin: 40px 0;
+}
+.main-area>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Nav area */
+
+nav {
+    background-color: #161616;
+    border-radius: 10px;
+    height: 350px;
+    overflow: hidden;
+}
+nav ul {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin: 20px 0;
+}
+nav ul li {
+    list-style: none;
+	margin: 20px 0;
+	text-align: center;	
+}
+nav ul li a {
+    display: block;
+    padding: 10px 0;
+    border-radius: 10px;
+    width: 230px;
+    text-decoration: none;
+    font-size: 1.2em;
+    text-transform: capitalize;
+    color: #DD0000;
+    background-color: #fff;
+}
+.active {
+    background-color: #DD0000;
+    color: #fff;
+}
+
+/* Blog area */
+
+.blogs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 17px;
+    padding:0 20px 20px;
+}
+.blog {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 5px;
+    overflow: hidden;
+    
+}
+.blog:hover img {
+    transform: scale(1.1);
+
+}
+.blog-thumbnail {
+    width: 100%;
+}
+.blog-thumbnail img {
+    width: 100%;
+    transition: 1s ease-in-out ;
+}
+.blog-details {
+    padding: 15px;
+}
+.transfer-btn {
+    padding: 4px 12px;
+    background-color: transparent;
+    text-transform: capitalize;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.blog-title {
+    font-size: 18px;
+    font-weight: 600;  
+}
+.blog-icon span {
+    font-size: 20px;
+}
+.blog-icon, blog-icon>span {
+   display: flex;
+   align-items: center;
+}
+.blog-icon>span>i {
+    margin-right: 10px;
+    font-size: 20px;
+}
+.blog-duration {
+    margin-right: 2em;
+}
+
+/* Footer area */
+
+footer{
+	background-color: #1E1E1E;
+	padding: 2em 6em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+footer h2{
+	margin-bottom: 2em;
+	color: #fff;
+    letter-spacing: 1px;
+}
+.footer-links{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 1em 0;
+}
+.footer-links li{
+	list-style: none;
+	margin: 1em;
+}
+.footer-links li a{
+	font-size: 16px;
+	text-decoration: none;
+	color: #B9B9B9;
+	letter-spacing: 1px;
+}
+
+/* social meadia links styles */
+
+.social-media-icons i{
+	font-size: 1.5em;
+	border: 3px solid #fff;
+	padding: .8rem;
+	border-radius: 50%;
+	margin: .5em;
+}
+.fa-facebook{
+	color: #4267B2;
+}
+.fa-twitter{
+	color: #1DA1F2;
+}
+.fa-instagram{
+	color: #d38217;
+}
+.fa-pinterest{
+	color: #E60023;
+}
+
+/* Upcoming matches page design */
+
+.match-sheduels{
+	padding: 30px 20px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.teams-flag{
+	display: flex;
+	justify-content:center;
+	align-items: center;
+}
+.flag {
+	max-width: 130px;
+}
+.view-all-btn{
+	display: none;
+	margin-top: 20px;
+	border: none;
+	background-color: #DD0000;
+	padding: 12px 28px;
+	border-radius: 5px;
+}
+.view-all-btn a{
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: 500;
+	color: #fff;
+}
+/* Responsive design area  */
+
+/* media query for small devies */
+@media screen and (max-width: 576px) {
+    .top-banner{
+		flex-direction: column;
+		padding: 0;
+		margin: 0;
+        height: auto;
+	}
+	.banner-text{
+		width: 100%;
+		margin-left: 0;
+		padding: 1.5em;
+		text-align: center;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.banner-heading{
+        width: 80%;
+		font-size: 2em;
+        line-height: 40px;
+	}
+	.banner-text>p{
+		width: 80%;
+        font-size: 1em;
+		overflow: hidden;
+		white-space: nowrap;
+		text-overflow: ellipsis;
+	}
+	.banner-img{
+	    width: 75%;
+
+	}
+	.banner-img img{
+		height: 100%;
+	}
+	nav{
+		height: auto;
+		margin-bottom: 20px;
+		background-color: transparent;
+		display: flex;
+		justify-content: center;
+	}
+	nav ul li{
+		margin: 20px 0;
+		border: 1px solid gray;
+        border-radius: 10px;
+	}
+	.main-area, .blogs{
+		grid-template-columns: 1fr;
+		width: 100%;
+	}
+   
+	footer h2{
+		font-size: 1.4em;
+	}
+	.footer-links{
+		flex-direction: column;
+		text-align: center;
+	}
+	.social-media-icons{
+		display: flex;
+		flex-direction: column;
+
+	}
+}
+
+/* media query for small devies */
+
+@media only screen and (min-width:577px) and (max-width:768px){
+	.top-banner {
+        margin: 20px 0;
+        padding: 0 30px;
+        height: 400px;
+    }
+    .banner-heading {
+		font-size: 1.5em;
+        line-height: 30px;
+	}
+	.banner-text>p{
+		font-size: 14px;
+		overflow: hidden;
+	}
+	.main-area {
+		grid-template-columns: 1fr;
+	    justify-content: center;
+	}
+	.main-area nav {
+		background-color: transparent;
+		height: auto;
+		padding: 0;
+		margin-bottom: 20px;
+	}
+	.main-area nav ul {
+		display: flex;
+		justify-content: center;
+        flex-direction: row;
+		margin: 0;
+        margin-right: 10px;
+	}
+	.main-area nav ul li {
+        border-radius: 10px;
+		margin: 0 10px;
+		border: 1px solid gray;
+	}
+	.main-area nav ul li a{
+        text-align: center;
+        width: 150px;
+		font-size: 14px;
+	}
+	.blogs {
+		width: 100%;
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.view-all-btn{
+		display: block;
+	}
+	.social-media-icons {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+	}
+}
